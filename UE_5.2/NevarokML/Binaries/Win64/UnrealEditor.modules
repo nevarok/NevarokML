@@ -1,0 +1,9 @@
+{
+	"BuildId": "25360045",
+	"Modules": 
+	{
+		"NevarokML": "UnrealEditor-NevarokML.dll",
+		"NevarokMLEditor": "UnrealEditor-NevarokMLEditor.dll",
+		"NevarokMLNodes": "UnrealEditor-NevarokMLNodes.dll"
+	}
+}

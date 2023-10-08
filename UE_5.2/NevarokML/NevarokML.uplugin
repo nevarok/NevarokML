@@ -1,0 +1,43 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.9b",
+	"FriendlyName": "NevarokML",
+	"Description": "Machine Learning Plugin for Unreal Engine",
+	"Category": "Other",
+	"CreatedBy": "Kyrylo Mishakin",
+	"CreatedByURL": "https://nevarok.com/",
+	"DocsURL": "https://nevarok.com/nevarok-ml/",
+	"MarketplaceURL": "",
+	"SupportURL": "https://nevarok.com/contacts/",
+	"EngineVersion": "5.2.0",
+	"CanContainContent": true,
+	"IsBetaVersion": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "NevarokML",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		},
+		{
+			"Name": "NevarokMLEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "NevarokMLNodes",
+			"Type": "UncookedOnly",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "NNE",
+			"Enabled": true
+		}
+	]
+}

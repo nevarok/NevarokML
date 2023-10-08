@@ -1,0 +1,241 @@
+﻿// LICENSE AGREEMENT
+// -----------------
+//
+// This License Agreement ("Agreement") is entered into by and between Kyrylo Mishakin, also known as nevarok ("Author"), and the licensee ("Licensee") for the usage of the Unreal Engine plugin named "NevarokML" ("Plugin").
+//
+// Grant of License:
+// 1.1. Author grants Licensee a non-exclusive, non-transferable license to use the Plugin for the Licensee's internal business purposes, subject to the terms and conditions of this Agreement.
+// 1.2. The license granted herein does not include the right to sublicense, distribute, sell, or otherwise make the Plugin available to third parties.
+//
+// Ownership and Intellectual Property:
+// 2.1. The Plugin, including all intellectual property rights, remains the sole and exclusive property of Kyrylo Mishakin. Licensee acknowledges and agrees that no ownership or intellectual property rights are transferred under this Agreement.
+// 2.2. If Licensee suggests any new features, functionality, or performance improvements for the Plugin that Author subsequently incorporates into the Plugin, Licensee hereby grants Author a worldwide, non-exclusive, royalty-free, perpetual right and license to use and incorporate such suggestions into the Plugin. Licensee acknowledges that the Plugin incorporating such new features, functionality, or performance shall be the sole and exclusive property of Author and all such suggestions shall be free from any confidentiality restrictions that might otherwise be imposed upon Author under this Agreement.
+//
+// Restrictions:
+// 3.1. Licensee shall not create derivative works based on the Plugin, except as expressly permitted by applicable law.
+// 3.2. Licensee shall not remove, alter, or obscure any copyright, trademark, or proprietary notices embedded in or displayed by the Plugin.
+// 3.3. Licensee shall not use the Plugin for any illegal or unauthorized purpose, including but not limited to infringing upon any third-party intellectual property rights.
+// 3.4. Licensee shall not distribute or include the external executable provided with the Plugin in any products based on the Plugin.
+//
+// Support and Updates:
+// 4.1. Author shall provide reasonable support to Licensee regarding the functionality and use of the Plugin. However, Author is under no obligation to provide updates, bug fixes, or new versions of the Plugin.
+//
+// Term and Termination:
+// 5.1. This Agreement shall remain in effect unless terminated by either party. Either party may terminate this Agreement immediately upon written notice if the other party breaches any material provision of this Agreement.
+// 5.2. Upon termination, Licensee shall immediately cease all use of the Plugin and delete or destroy any copies of the Plugin in their possession or control.
+//
+// Limitation of Liability:
+// 6.1. In no event shall Kyrylo Mishakin be liable for any indirect, incidental, consequential, or punitive damages arising out of or in connection with the use or inability to use the Plugin, even if Kyrylo Mishakin has been advised of the possibility of such damages.
+//
+// Governing Law and Jurisdiction:
+// 7.1. This Agreement shall be governed by and construed in accordance with the laws of the jurisdiction where Kyrylo Mishakin is located.
+// 7.2. Any disputes arising out of or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts in the jurisdiction where Kyrylo Mishakin is located.
+//
+// Non-Commercial Use:
+// 8.1. Licensee is permitted to obtain the Plugin for free for the sole purpose of non-commercial use. Non-commercial use includes social media content creation, educational, research, or personal projects that do not generate direct revenue.
+// 8.2. Licensee shall ensure that recipients of the Plugin for non-commercial use are made aware of the terms and conditions of this Agreement and agree to abide by them.
+//
+// Commercial Use and Licensing:
+// 8.3. Any use of the Plugin for commercial purposes, including but not limited to projects, products, or services intended for profit, requires Licensee to obtain a separate commercial license from the Author.
+// 8.4. Commercial use includes any content or applications created or enhanced using the Plugin that are intended for profit, including but not limited to games, simulations, or other interactive experiences.
+// 8.5. Licensee shall contact the Author to inquire about and obtain the appropriate commercial license for such use.
+// 8.6. Licensee acknowledges that any commercial use without a valid commercial license is a breach of this Agreement.
+//
+// Please note that the term "commercial use" encompasses any use of the Plugin that is intended to generate direct revenue or financial gain.
+//
+// This addition to the License Agreement clarifies the conditions under which the Plugin can be distributed and used, distinguishing between non-commercial and commercial purposes. Licensees are required to obtain a commercial license for any commercial use of the Plugin, ensuring compliance with the licensing terms.
+//
+// By using the Plugin, Licensee acknowledges that they have read and understood this Agreement and agree to be bound by its terms and conditions.
+//
+// Copyright (c) 2023 Kyrylo Mishakin
+
+#pragma once
+#include "CoreMinimal.h"
+#include "GameFramework/Actor.h"
+#include "Engine/EngineBaseTypes.h"
+#include "Spaces/NevarokMLSpace.h"
+#include "Data/NevarokMLDataLibrary.h"
+#include "NevarokMLTrainer.generated.h"
+
+class ANevarokMLTrainer;
+class UNevarokMLSocketServer;
+
+UENUM(BlueprintType)
+enum class ENevarokMLState : uint8
+{
+    NONE = 0 UMETA(DisplayName = "NONE"),
+    START = 1 UMETA(DisplayName = "START"),
+    LISTEN = 2 UMETA(DisplayName = "LISTEN"),
+    RECEIVE = 3 UMETA(DisplayName = "RECEIVE"),
+    COMPLETE = 4 UMETA(DisplayName = "COMPLETE"),
+    INVALID = 5 UMETA(DisplayName = "INVALID"),
+    WAIT = 6 UMETA(DisplayName = "WAIT"),
+    READY = 7 UMETA(DisplayName = "READY"),
+    SIMULATION = 8 UMETA(DisplayName = "SIMULATION"),
+};
+
+USTRUCT()
+struct FNevarokMLTrainerTickFunction : public FTickFunction
+{
+    GENERATED_USTRUCT_BODY()
+
+    UPROPERTY()
+    ANevarokMLTrainer* Target;
+
+    virtual void ExecuteTick(float deltaTime, ELevelTick tickType, ENamedThreads::Type currentThread,
+                             const FGraphEventRef& myCompletionGraphEvent) override;
+    virtual FString DiagnosticMessage() override;
+    virtual FName DiagnosticContext(bool bDetailed) override;
+};
+
+template <>
+struct TStructOpsTypeTraits<
+        FNevarokMLTrainerTickFunction> : public TStructOpsTypeTraitsBase2<FNevarokMLTrainerTickFunction>
+{
+    enum
+    {
+        WithCopy = false
+    };
+};
+
+UCLASS(Blueprintable)
+class NEVAROKML_API ANevarokMLTrainer : public AActor
+{
+    GENERATED_BODY()
+
+    ENevarokMLState _state = ENevarokMLState::NONE;
+    float _tickIntervalTimer = 0.0;
+    FNevarokMLTrainerTickFunction _trainerTickFunction;
+    TUniquePtr<FProcHandle> _procHandle;
+
+    UPROPERTY(EditAnywhere, Category="NevarokML|Trainer")
+    bool _autoKillBackend = false;
+
+    UPROPERTY(EditAnywhere, Category = "NevarokML|Trainer")
+    bool _simulate;
+
+public:
+    ANevarokMLTrainer();
+    virtual void TickTrainer(float deltaTime);
+
+protected:
+    UPROPERTY(BlueprintReadOnly, Category="NevarokML|Trainer")
+    UNevarokMLSpace* _actionSpace;
+
+    UPROPERTY(BlueprintReadWrite, Category="NevarokML|Trainer")
+    UNevarokMLSpace* _observationSpace;
+
+    UPROPERTY(BlueprintReadOnly, Category="NevarokML|Trainer")
+    UNevarokMLSocketServer* _socketServer;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer")
+    FString _backendAddress = TEXT("127.0.0.1");
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer")
+    int32 _backendPort = 65432;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer", meta = (ClampMin = "0", ClampMax = "3"))
+    int _backendVerbose = 0;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer", meta = (ClampMin = "1"))
+    int _maxEnvsCount = 1;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer", meta = (ClampMin = "0.0"))
+    float _tickInterval = 0;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer", meta = (ClampMin = "0"))
+    int32 _envUpdatesPerTick = 1;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer")
+    TArray<ANevarokMLEnv*> _envs;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="NevarokML|Trainer")
+    TArray<ANevarokMLTrainer*> _dependencyTrainers;
+
+    UFUNCTION(BlueprintPure, Category="NevarokML|Trainer")
+    int GetEnvsCount() const;
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnStart();
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnInvalid();
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnConstruct(UNevarokMLSpace* actionSpace, UNevarokMLSpace* observationSpace);
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnInit(int index, ANevarokMLEnv* env);
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnStep(int index, ANevarokMLEnv* env);
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnStepSkip(int index, ANevarokMLEnv* env);
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnReset(int index, ANevarokMLEnv* env);
+
+    UFUNCTION(BlueprintNativeEvent, Category="NevarokML|Trainer")
+    void OnComplete();
+
+    UFUNCTION(BlueprintCallable, Category="NevarokML|Trainer")
+    bool Learn(const UNevarokMLBaseAlgorithm* algorithm,
+               const ENevarokMLDevice device,
+               int timesteps = 10000,
+               int evalEps = 0,
+               int saveFreq = 6000,
+               int logInterval = 1,
+               const FFilePath loadModelPath = FFilePath(),
+               const FName saveModelName = FName("Model"),
+               const bool deterministic = true,
+               const bool showTensorboard = false,
+               const bool showReward = false,
+               const bool showStepDebug = false, const bool showResetDebug = true);
+
+    bool RunBackend();
+    void KillBackend();
+    bool ValidateSpaces() const;
+    bool ParseData(const TArray<uint8>& data, ENevarokMLData& dataType);
+
+    bool Validate() const;
+    void ExecuteInit();
+    void KillSocket();
+    void ExecuteInvalid();
+
+    void ExecuteInitEnv(int index, ANevarokMLEnv* env);
+    void ExecuteStepEnv(int index, ANevarokMLEnv* env);
+    void ExecuteStepSkipEnv(int index, ANevarokMLEnv* env);
+    void ExecuteResetEnv(int index, ANevarokMLEnv* env);
+
+    bool ValidateEnvs() const;
+    bool ValidateDependency() const;
+
+    virtual void OnStart_Implementation();
+    virtual void OnComplete_Implementation();
+    virtual void OnInvalid_Implementation();
+    virtual void OnConstruct_Implementation(UNevarokMLSpace* actionSpace, UNevarokMLSpace* observationSpace);
+    virtual void OnInit_Implementation(int index, ANevarokMLEnv* env);
+    virtual void OnStep_Implementation(int index, ANevarokMLEnv* env);
+    virtual void OnStepSkip_Implementation(int index, ANevarokMLEnv* env);
+    virtual void OnReset_Implementation(int index, ANevarokMLEnv* env);
+
+    bool HandleAction(const TSharedPtr<FJsonObject>& jsonObject);
+    void ExecuteConstruct();
+    void ExecuteSimulationInit();
+    bool HandleReset(const TSharedPtr<FJsonObject>& jsonObject);
+    bool HandleReady(const TSharedPtr<FJsonObject>& jsonObject);
+    bool HandleComplete(const TSharedPtr<FJsonObject>& jsonObject);
+    bool HandleError(const TSharedPtr<FJsonObject>& jsonObject);
+    bool HandleSave(const TSharedPtr<FJsonObject>& jsonObject) const;
+
+    virtual void BeginPlay() override;
+    virtual void BeginDestroy() override;
+    virtual void RegisterActorTickFunctions(bool bRegister) override;
+
+    UFUNCTION(BlueprintCallable, CallInEditor, Category = "NevarokML")
+    void ClearEnvs();
+
+    UFUNCTION(BlueprintCallable, CallInEditor, Category = "NevarokML")
+    void CollectChildEnvs();
+};
