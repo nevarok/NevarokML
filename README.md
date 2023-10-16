@@ -4,7 +4,7 @@
   </a>
 </p>
 
-# NevarokML: Machine Learning for Unreal Engine
+# NevarokML: Reinforcement Learning for Unreal Engine
 
 [github]: https://github.com/nevarok/NevarokML
 [Unreal Engine]: https://www.unrealengine.com/
@@ -16,13 +16,13 @@
 - [GitHub Repository][github]
 - [Documentation][NevarokML]
 
-Welcome to [NevarokML], the advanced plugin that brings the power of machine learning to [Unreal Engine]. NevarokML
-allows you to seamlessly train machine learning models right from within the Unreal Engine environment
+Welcome to [NevarokML], the advanced plugin that brings the power of reinforcement learning to [Unreal Engine]. NevarokML
+allows you to seamlessly train reinforcement learning models right from within the Unreal Engine environment
 using [stable-baselines3].
 
 With NevarokML, you have access to a wide range of supported algorithms, including PPO, A2C, DDPG, DQN, SAC, and TD3,
 enabling you to choose the one that best suits your needs. The plugin also supports multi-agent training and
-multi-environment training, offering flexibility and scalability in your machine learning endeavors.
+multi-environment training, offering flexibility and scalability in your machine-learning endeavors.
 
 Train your models using NevarokML using either C++ or Blueprints, providing developers with the freedom to utilize their
 preferred programming approach. Whether you're an experienced coder or a visual scripting enthusiast, NevarokML supports
