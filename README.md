@@ -9,9 +9,9 @@
 [github]: https://github.com/nevarok/NevarokML
 [Unreal Engine]: https://www.unrealengine.com/
 [stable-baselines3]: https://stable-baselines3.readthedocs.io/
-[NevarokML]: https://nevarok.com/nevarokml/
+[NevarokML]: https://nevarok.com/nevarok-ml/
 [NeuralNetworkEngine]: https://dev.epicgames.com/community/learning/courses/e7w/unreal-engine-nne/nl83/unreal-engine-nne-overview
-[getting-started]: https://nevarok.com/nevarokml/getting-started/
+[getting-started]: https://nevarok.com/nevarok-ml/getting-started/
 
 - [GitHub Repository][github]
 - [Documentation][NevarokML]
