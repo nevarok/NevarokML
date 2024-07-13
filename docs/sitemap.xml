@@ -1,283 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://nevarok.com/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/contacts/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/contacts.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/blog/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/blog/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/blog/posts/test-blog/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/blog/posts/test-blog.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/contributing/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/contributing/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/contributing/reporting-a-bug/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/contributing/reporting-a-bug.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/contributing/reporting-a-docs-issue/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/contributing/reporting-a-docs-issue.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/contributing/requesting-a-change/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/contributing/requesting-a-change.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/license/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/license/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/license/nevarok-ml-license/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/license/nevarok-ml-license.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/a2c/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/a2c.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/algorithm_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/algorithm_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/algorithm_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/algorithm_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/binary/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/binary.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/box/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/box.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/boxdxstack/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/boxdxstack.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/boxdystack/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/boxdystack.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/continuous/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/continuous.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/continuousstack/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/continuousstack.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/ddpg/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/ddpg.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/discrete/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/discrete.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/dqn/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/dqn.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/environment_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/environment_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/environment_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/environment_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/experts/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/experts.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/imitation/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/imitation.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/multibinary/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/multibinary.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/multibinary_hidden/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/multibinary_hidden.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/multibinarystack/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/multibinarystack.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/multidiscrete/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/multidiscrete.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/multidiscretestack/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/multidiscretestack.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/nnemodel_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/nnemodel_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/nnemodel_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/nnemodel_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/ppo/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/ppo.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/reinforcement/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/reinforcement.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/reward_utils_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/reward_utils_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/sac/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/sac.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/sample_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/sample_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/sample_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/sample_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/sample_utils_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/sample_utils_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/space_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/space_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/space_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/space_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/td3/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/td3.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/testing-and-deployment/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/testing-and-deployment.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/trainer_api/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/trainer_api.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/documentation/trainer_overview/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/documentation/trainer_overview.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/examples/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/examples/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/index.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/installation/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/installation.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/markov-decision-processes/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/markov-decision-processes.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/reinforcement-learning/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/reinforcement-learning.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/supported-platforms/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/supported-platforms.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/getting-started/under-the-hood/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/getting-started/under-the-hood.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/introduction/nevarokml-reinforcement-learning/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/introduction/nevarokml-reinforcement-learning.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://nevarok.com/nevarok-ml/introduction/what-is-nevarokml/</loc>
-         <lastmod>2023-10-03</lastmod>
+         <loc>https://nevarok.com/nevarok-ml/introduction/what-is-nevarokml.html</loc>
+         <lastmod>2024-07-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

@@ -12,27 +12,27 @@
         <meta name="author" content="Kyrylo Mishakin">
       
       
-        <link rel="canonical" href="https://nevarok.com/license/index.html">
+        <link rel="canonical" href="https://nevarok.com/nevarok-ml/getting-started/markov-decision-processes.html">
       
       
-        <link rel="prev" href="../contributing/requesting-a-change.html">
+        <link rel="prev" href="installation.html">
       
       
-        <link rel="next" href="nevarok-ml-license.html">
+        <link rel="next" href="reinforcement-learning.html">
       
-      <link rel="icon" href="../assets/favicon.png">
+      <link rel="icon" href="../../assets/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
     
     
       
-        <title>Index - nevarok</title>
+        <title>Markov Decision Processes (MDPs) - nevarok</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.26e3688c.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.ecc896b0.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
       
       
 
@@ -48,14 +48,14 @@
       
     
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
     
     
     
-  <link rel="stylesheet" href="../assets/stylesheets/custom.f7ec4df2.min.css">
+  <link rel="stylesheet" href="../../assets/stylesheets/custom.f7ec4df2.min.css">
 
   </head>
   
@@ -79,7 +79,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#license-agreements" class="md-skip">
+        <a href="#markov-decision-processes-mdps-in-reinforcement-learning" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../index.html" title="nevarok" class="md-header__button md-logo" aria-label="nevarok" data-md-component="logo">
+    <a href="../../index.html" title="nevarok" class="md-header__button md-logo" aria-label="nevarok" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 255">
@@ -115,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Index
+              Markov Decision Processes (MDPs)
             
           </span>
         </div>
@@ -223,7 +223,7 @@
 
 
   <li class="md-tabs__item">
-    <a href="../index.html" class="md-tabs__link">
+    <a href="../../index.html" class="md-tabs__link">
       Home
     </a>
   </li>
@@ -231,6 +231,8 @@
       
         
   
+  
+    
   
 
 
@@ -243,7 +245,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../nevarok-ml/index.html" class="md-tabs__link">
+      <a href="../index.html" class="md-tabs__link md-tabs__link--active">
         NevarokML
       </a>
     </li>
@@ -255,15 +257,13 @@
         
   
   
-    
-  
 
 
   
   
   
     <li class="md-tabs__item">
-      <a href="index.html" class="md-tabs__link md-tabs__link--active">
+      <a href="../../license/index.html" class="md-tabs__link">
         License
       </a>
     </li>
@@ -279,7 +279,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../contacts.html" class="md-tabs__link">
+      <a href="../../contacts.html" class="md-tabs__link">
         Contacts
       </a>
     </li>
@@ -307,7 +307,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../index.html" title="nevarok" class="md-nav__button md-logo" aria-label="nevarok" data-md-component="logo">
+    <a href="../../index.html" title="nevarok" class="md-nav__button md-logo" aria-label="nevarok" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255 255">
@@ -342,7 +342,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../index.html" class="md-nav__link">
+      <a href="../../index.html" class="md-nav__link">
         Home
       </a>
     </li>
@@ -355,14 +355,16 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
       
       
         
@@ -381,7 +383,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2">
           <span class="md-nav__icon md-icon"></span>
           NevarokML
@@ -418,7 +420,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../nevarok-ml/index.html">Introduction</a>
+          <a href="../index.html">Introduction</a>
           
             <label for="__nav_2_1">
               <span class="md-nav__icon md-icon"></span>
@@ -441,7 +443,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/introduction/what-is-nevarokml.html" class="md-nav__link">
+      <a href="../introduction/what-is-nevarokml.html" class="md-nav__link">
         What is NevarokML?
       </a>
     </li>
@@ -455,7 +457,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/introduction/nevarokml-reinforcement-learning.html" class="md-nav__link">
+      <a href="../introduction/nevarokml-reinforcement-learning.html" class="md-nav__link">
         How NevarokML Empowers Reinforcement Learning in Unreal Engine?
       </a>
     </li>
@@ -474,16 +476,18 @@
               
   
   
+    
+  
   
     
       
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
       
       
         
@@ -506,7 +510,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../nevarok-ml/getting-started/index.html">Getting Started</a>
+          <a href="index.html">Getting Started</a>
           
             <label for="__nav_2_2">
               <span class="md-nav__icon md-icon"></span>
@@ -514,7 +518,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2">
           <span class="md-nav__icon md-icon"></span>
           Getting Started
@@ -529,7 +533,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/getting-started/under-the-hood.html" class="md-nav__link">
+      <a href="under-the-hood.html" class="md-nav__link">
         Under the Hood
       </a>
     </li>
@@ -543,7 +547,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/getting-started/supported-platforms.html" class="md-nav__link">
+      <a href="supported-platforms.html" class="md-nav__link">
         Supported Platforms
       </a>
     </li>
@@ -557,7 +561,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/getting-started/installation.html" class="md-nav__link">
+      <a href="installation.html" class="md-nav__link">
         Installing Plugin
       </a>
     </li>
@@ -569,14 +573,16 @@
               
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" >
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_5" checked>
       
       
         
@@ -591,7 +597,7 @@
           <span class="md-nav__icon md-icon"></span>
         </label>
       
-      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="false">
+      <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_5_label" aria-expanded="true">
         <label class="md-nav__title" for="__nav_2_2_5">
           <span class="md-nav__icon md-icon"></span>
           Basics
@@ -602,11 +608,66 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../nevarok-ml/getting-started/markov-decision-processes.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Markov Decision Processes (MDPs)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="markov-decision-processes.html" class="md-nav__link md-nav__link--active">
         Markov Decision Processes (MDPs)
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#key-concepts" class="md-nav__link">
+    Key Concepts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solving-mdps" class="md-nav__link">
+    Solving MDPs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-mdps" class="md-nav__link">
+    Applications of MDPs
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -618,7 +679,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/getting-started/reinforcement-learning.html" class="md-nav__link">
+      <a href="reinforcement-learning.html" class="md-nav__link">
         What is Reinforcement Learning?
       </a>
     </li>
@@ -733,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/algorithm_overview.html" class="md-nav__link">
+      <a href="../documentation/algorithm_overview.html" class="md-nav__link">
         BaseAlgorithm Overview
       </a>
     </li>
@@ -747,7 +808,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/algorithm_api.html" class="md-nav__link">
+      <a href="../documentation/algorithm_api.html" class="md-nav__link">
         BaseAlgorithm API
       </a>
     </li>
@@ -761,7 +822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/a2c.html" class="md-nav__link">
+      <a href="../documentation/a2c.html" class="md-nav__link">
         A2C
       </a>
     </li>
@@ -775,7 +836,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/ddpg.html" class="md-nav__link">
+      <a href="../documentation/ddpg.html" class="md-nav__link">
         DDPG (TD3)
       </a>
     </li>
@@ -789,7 +850,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/dqn.html" class="md-nav__link">
+      <a href="../documentation/dqn.html" class="md-nav__link">
         DQN
       </a>
     </li>
@@ -803,7 +864,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/ppo.html" class="md-nav__link">
+      <a href="../documentation/ppo.html" class="md-nav__link">
         PPO
       </a>
     </li>
@@ -817,7 +878,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/sac.html" class="md-nav__link">
+      <a href="../documentation/sac.html" class="md-nav__link">
         SAC
       </a>
     </li>
@@ -831,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/td3.html" class="md-nav__link">
+      <a href="../documentation/td3.html" class="md-nav__link">
         TD3
       </a>
     </li>
@@ -907,7 +968,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/space_overview.html" class="md-nav__link">
+      <a href="../documentation/space_overview.html" class="md-nav__link">
         Space Overview
       </a>
     </li>
@@ -921,7 +982,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/space_api.html" class="md-nav__link">
+      <a href="../documentation/space_api.html" class="md-nav__link">
         Space API
       </a>
     </li>
@@ -935,7 +996,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/box.html" class="md-nav__link">
+      <a href="../documentation/box.html" class="md-nav__link">
         Box
       </a>
     </li>
@@ -949,7 +1010,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/boxdxstack.html" class="md-nav__link">
+      <a href="../documentation/boxdxstack.html" class="md-nav__link">
         BoxDXStack
       </a>
     </li>
@@ -963,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/boxdystack.html" class="md-nav__link">
+      <a href="../documentation/boxdystack.html" class="md-nav__link">
         BoxDYStack
       </a>
     </li>
@@ -977,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/continuous.html" class="md-nav__link">
+      <a href="../documentation/continuous.html" class="md-nav__link">
         Continuous
       </a>
     </li>
@@ -991,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/continuousstack.html" class="md-nav__link">
+      <a href="../documentation/continuousstack.html" class="md-nav__link">
         ContinuousStack
       </a>
     </li>
@@ -1005,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/multidiscrete.html" class="md-nav__link">
+      <a href="../documentation/multidiscrete.html" class="md-nav__link">
         MultiDiscrete
       </a>
     </li>
@@ -1019,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/multidiscretestack.html" class="md-nav__link">
+      <a href="../documentation/multidiscretestack.html" class="md-nav__link">
         MultiDiscreteStack
       </a>
     </li>
@@ -1033,7 +1094,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/discrete.html" class="md-nav__link">
+      <a href="../documentation/discrete.html" class="md-nav__link">
         Discrete
       </a>
     </li>
@@ -1047,7 +1108,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/multibinary.html" class="md-nav__link">
+      <a href="../documentation/multibinary.html" class="md-nav__link">
         MultiBinary
       </a>
     </li>
@@ -1061,7 +1122,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/multibinarystack.html" class="md-nav__link">
+      <a href="../documentation/multibinarystack.html" class="md-nav__link">
         MultiBinaryStack
       </a>
     </li>
@@ -1075,7 +1136,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/binary.html" class="md-nav__link">
+      <a href="../documentation/binary.html" class="md-nav__link">
         Binary **(Upcoming)**
       </a>
     </li>
@@ -1131,7 +1192,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/sample_overview.html" class="md-nav__link">
+      <a href="../documentation/sample_overview.html" class="md-nav__link">
         Sample Overview
       </a>
     </li>
@@ -1145,7 +1206,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/sample_api.html" class="md-nav__link">
+      <a href="../documentation/sample_api.html" class="md-nav__link">
         Sample API
       </a>
     </li>
@@ -1159,7 +1220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/sample_utils_api.html" class="md-nav__link">
+      <a href="../documentation/sample_utils_api.html" class="md-nav__link">
         Sample Utils API
       </a>
     </li>
@@ -1213,7 +1274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/trainer_overview.html" class="md-nav__link">
+      <a href="../documentation/trainer_overview.html" class="md-nav__link">
         Trainer Overview
       </a>
     </li>
@@ -1227,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/trainer_api.html" class="md-nav__link">
+      <a href="../documentation/trainer_api.html" class="md-nav__link">
         Trainer API
       </a>
     </li>
@@ -1283,7 +1344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/environment_overview.html" class="md-nav__link">
+      <a href="../documentation/environment_overview.html" class="md-nav__link">
         Environment Overview
       </a>
     </li>
@@ -1297,7 +1358,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/environment_api.html" class="md-nav__link">
+      <a href="../documentation/environment_api.html" class="md-nav__link">
         Environment API
       </a>
     </li>
@@ -1311,7 +1372,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/reward_utils_api.html" class="md-nav__link">
+      <a href="../documentation/reward_utils_api.html" class="md-nav__link">
         Reward Utils API
       </a>
     </li>
@@ -1365,7 +1426,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/nnemodel_overview.html" class="md-nav__link">
+      <a href="../documentation/nnemodel_overview.html" class="md-nav__link">
         NNEModel Overview
       </a>
     </li>
@@ -1379,7 +1440,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/nnemodel_api.html" class="md-nav__link">
+      <a href="../documentation/nnemodel_api.html" class="md-nav__link">
         NNEModel API
       </a>
     </li>
@@ -1400,7 +1461,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/reinforcement.html" class="md-nav__link">
+      <a href="../documentation/reinforcement.html" class="md-nav__link">
         Reinforcement Learning
       </a>
     </li>
@@ -1414,7 +1475,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/testing-and-deployment.html" class="md-nav__link">
+      <a href="../documentation/testing-and-deployment.html" class="md-nav__link">
         Testing and Deployment
       </a>
     </li>
@@ -1428,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/experts.html" class="md-nav__link">
+      <a href="../documentation/experts.html" class="md-nav__link">
         Experts Training **(Upcoming)**
       </a>
     </li>
@@ -1442,7 +1503,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../nevarok-ml/documentation/imitation.html" class="md-nav__link">
+      <a href="../documentation/imitation.html" class="md-nav__link">
         Imitation Learning **(Upcoming)**
       </a>
     </li>
@@ -1490,7 +1551,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../nevarok-ml/examples/index.html">Examples and Tutorials</a>
+          <a href="../examples/index.html">Examples and Tutorials</a>
           
         </div>
       
@@ -1546,7 +1607,7 @@
         
         
         <div class="md-nav__link md-nav__link--index ">
-          <a href="../contributing/index.html">Community and Support</a>
+          <a href="../../contributing/index.html">Community and Support</a>
           
             <label for="__nav_2_4">
               <span class="md-nav__icon md-icon"></span>
@@ -1569,7 +1630,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/reporting-a-bug.html" class="md-nav__link">
+      <a href="../../contributing/reporting-a-bug.html" class="md-nav__link">
         Reporting a bug
       </a>
     </li>
@@ -1583,7 +1644,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/reporting-a-docs-issue.html" class="md-nav__link">
+      <a href="../../contributing/reporting-a-docs-issue.html" class="md-nav__link">
         Reporting a documentation issue
       </a>
     </li>
@@ -1597,7 +1658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contributing/requesting-a-change.html" class="md-nav__link">
+      <a href="../../contributing/requesting-a-change.html" class="md-nav__link">
         Requesting a change
       </a>
     </li>
@@ -1652,16 +1713,14 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
       
       
-      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
       
       
         
@@ -1675,8 +1734,8 @@
       
         
         
-        <div class="md-nav__link md-nav__link--index md-nav__link--active">
-          <a href="index.html">License</a>
+        <div class="md-nav__link md-nav__link--index ">
+          <a href="../../license/index.html">License</a>
           
             <label for="__nav_3">
               <span class="md-nav__icon md-icon"></span>
@@ -1684,7 +1743,7 @@
           
         </div>
       
-      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
         <label class="md-nav__title" for="__nav_3">
           <span class="md-nav__icon md-icon"></span>
           License
@@ -1699,7 +1758,7 @@
   
   
     <li class="md-nav__item">
-      <a href="nevarok-ml-license.html" class="md-nav__link">
+      <a href="../../license/nevarok-ml-license.html" class="md-nav__link">
         NevarokML License Agreement
       </a>
     </li>
@@ -1752,7 +1811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../contacts.html" class="md-nav__link">
+      <a href="../../contacts.html" class="md-nav__link">
         Contact Us
       </a>
     </li>
@@ -1793,15 +1852,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#license-agreements_1" class="md-nav__link">
-    License Agreements
+  <a href="#key-concepts" class="md-nav__link">
+    Key Concepts
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#contact-information" class="md-nav__link">
-    Contact Information
+  <a href="#solving-mdps" class="md-nav__link">
+    Solving MDPs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#applications-of-mdps" class="md-nav__link">
+    Applications of MDPs
   </a>
   
 </li>
@@ -1824,25 +1890,76 @@
   
 
 
-<h1 id="license-agreements">License Agreements</h1>
-<p>Welcome to the license agreements page for our products. Here, you
-can find all the relevant license agreements that govern the use of products and materials. It is important to
-carefully read and understand these agreements before using any of our product.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note that the license agreements may vary depending on the specific product you are using. To ensure
-compliance, refer to the corresponding license agreement for the particular product you are interested in.</p>
-</div>
-<h2 id="license-agreements_1">License Agreements</h2>
+<h1 id="markov-decision-processes-mdps-in-reinforcement-learning">Markov Decision Processes (MDPs) in Reinforcement Learning</h1>
+<p>Markov Decision Processes (MDPs) are fundamental mathematical models used in reinforcement learning to formalize
+decision-making problems. MDPs provide a framework for understanding and solving sequential decision-making tasks in
+uncertain environments.</p>
+<h2 id="key-concepts">Key Concepts</h2>
 <ul>
-<li><strong><a href="nevarok-ml-license">NevarokML License Agreement</a></strong></li>
+<li>
+<p><strong>States</strong>: MDPs consist of a set of states representing different configurations or conditions of the environment.</p>
+</li>
+<li>
+<p><strong>Actions</strong>: Agents can take actions in each state, influencing the subsequent state transitions.</p>
+</li>
+<li>
+<p><strong>Rewards</strong>: MDPs assign rewards to agents based on their actions and resulting states. The goal is to maximize the
+cumulative rewards over time.</p>
+</li>
+<li>
+<p><strong>Transition Probabilities</strong>: MDPs define transition probabilities that determine the likelihood of transitioning from
+one
+state to another based on the chosen action.</p>
+</li>
+<li>
+<p><strong>Policy</strong>: A policy defines the agent's decision-making strategy by specifying the action to take in each state.</p>
+</li>
 </ul>
-<h2 id="contact-information">Contact Information</h2>
+<h2 id="solving-mdps">Solving MDPs</h2>
+<p>The objective in solving MDPs is to find an optimal policy that maximizes the expected cumulative reward over time.
+Several algorithms and techniques can be applied to solve MDPs, including:</p>
 <ul>
-<li>If you have any questions or concerns regarding the license agreements or any product, <strong><a href="../contacts.html">please contact us</a></strong></li>
+<li>
+<p><strong>Value Iteration</strong>: An iterative algorithm that updates the values of states until convergence to find the optimal
+value
+function.</p>
+</li>
+<li>
+<p><strong>Policy Iteration</strong>: An iterative algorithm that alternates between policy evaluation and policy improvement steps to
+converge on an optimal policy.</p>
+</li>
+<li>
+<p><strong>Q-Learning</strong>: A model-free algorithm that learns the optimal action-value function by interacting with the environment
+and
+updating Q-values.</p>
+</li>
+<li>
+<p><strong>Monte Carlo Methods</strong>: Sample-based methods that estimate value functions by averaging returns from sample
+trajectories.</p>
+</li>
 </ul>
-<p>We strive to provide clear and transparent licensing terms to ensure a positive user experience and compliance with
-applicable laws and regulations. Thank you for choosing us and our products.</p>
+<h2 id="applications-of-mdps">Applications of MDPs</h2>
+<p>MDPs have various applications in reinforcement learning and beyond, including</p>
+<ul>
+<li>
+<p><strong>Robotics</strong>: MDPs enable robots to make intelligent decisions and navigate complex environments.</p>
+</li>
+<li>
+<p><strong>Game AI</strong>: MDPs form the basis for developing intelligent agents in video games, capable of adaptive and strategic
+behavior.</p>
+</li>
+<li>
+<p><strong>Resource Management</strong>: MDPs help optimize resource allocation and scheduling in various domains, such as energy
+management
+and transportation.</p>
+</li>
+<li>
+<p><strong>Finance</strong>: MDPs are used to model and optimize investment and portfolio management strategies.</p>
+</li>
+</ul>
+<p>In conclusion, Markov Decision Processes (MDPs) provide a formal framework for modeling and solving decision-making
+problems in reinforcement learning. By understanding the concepts and algorithms associated with MDPs, developers can
+design intelligent agents that make optimal decisions in uncertain environments.</p>
 <hr />
 
 
@@ -1870,7 +1987,7 @@ applicable laws and regulations. Thank you for choosing us and our products.</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../contributing/requesting-a-change.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Requesting a change" rel="prev">
+          <a href="installation.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Installing Plugin" rel="prev">
             <div class="md-footer__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
             </div>
@@ -1879,20 +1996,20 @@ applicable laws and regulations. Thank you for choosing us and our products.</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Requesting a change
+                Installing Plugin
               </div>
             </div>
           </a>
         
         
           
-          <a href="nevarok-ml-license.html" class="md-footer__link md-footer__link--next" aria-label="Next: NevarokML License Agreement" rel="next">
+          <a href="reinforcement-learning.html" class="md-footer__link md-footer__link--next" aria-label="Next: What is Reinforcement Learning?" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                NevarokML License Agreement
+                What is Reinforcement Learning?
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1922,14 +2039,14 @@ applicable laws and regulations. Thank you for choosing us and our products.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.instant"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow", "navigation.instant"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
   
-      <script src="../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
       
     
-  <script src="../assets/javascripts/custom.a1e08cb1.min.js"></script>
+  <script src="../../assets/javascripts/custom.a1e08cb1.min.js"></script>
 
   </body>
 </html>
